@@ -15,11 +15,16 @@ struct Offer: View {
         VStack {
             Image(systemName: "snowflake.circle.fill")
                 .padding(0)
-                .opacity(0.5)
             Text(title)
-                .font(.title3).padding(0)
+                .font(.title)
+                .padding()
                 .foregroundColor(Color(hue: 0.6, saturation: 0.599, brightness: 0.604))
+                .background(Color("CardBackground"))
             Text(description)
+                .foregroundColor(Color(hue: 0.6, saturation: 0.599, brightness: 0.604))
+                .padding()
+                .background(Color("CardBackground"))
+
         }
     }
 }
