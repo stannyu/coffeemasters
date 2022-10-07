@@ -12,20 +12,26 @@ struct Offer: View {
     var description = ""
     
     var body: some View {
-        VStack {
-            Image(systemName: "snowflake.circle.fill")
-                .padding(0)
-            Text(title)
-                .font(.title)
-                .padding()
-                .foregroundColor(Color(hue: 0.6, saturation: 0.599, brightness: 0.604))
-                .background(Color("CardBackground"))
-            Text(description)
-                .foregroundColor(Color(hue: 0.6, saturation: 0.599, brightness: 0.604))
-                .padding()
-                .background(Color("CardBackground"))
+        ZStack {
+            Image("BackgroundPattern")
+                .frame(maxWidth: .infinity, maxHeight: 200)
+                .clipped()
+            VStack {
+                Image(systemName: "snowflake.circle.fill")
+                    .padding(0)
+                Text(title)
+                    .font(.title)
+                    .padding()
+                    .foregroundColor(Color(hue: 0.6, saturation: 0.599, brightness: 0.604))
+                    .background(Color("CardBackground"))
+                Text(description)
+                    .foregroundColor(Color(hue: 0.6, saturation: 0.599, brightness: 0.604))
+                    .padding()
+                    .background(Color("CardBackground"))
 
+            }
         }
+        
     }
 }
 
