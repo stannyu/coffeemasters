@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		F01868C428F054920009E650 /* OffersPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01868C328F054920009E650 /* OffersPage.swift */; };
 		F094078028EEB0C600478473 /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F094077F28EEB0C600478473 /* Offer.swift */; };
+		F0A7EF8828F1714F003D060C /* MenuPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A7EF8728F1714F003D060C /* MenuPage.swift */; };
+		F0A7EF8A28F17207003D060C /* OrdersPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A7EF8928F17207003D060C /* OrdersPage.swift */; };
+		F0A7EF8C28F17217003D060C /* InfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A7EF8B28F17217003D060C /* InfoPage.swift */; };
+		F0A7EF8E28F173AD003D060C /* ProductItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A7EF8D28F173AD003D060C /* ProductItem.swift */; };
+		F0A7EF9028F17A80003D060C /* DetailsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A7EF8F28F17A80003D060C /* DetailsPage.swift */; };
+		F0A7EF9328F1D990003D060C /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A7EF9228F1D990003D060C /* Category.swift */; };
+		F0A7EF9528F1D9A2003D060C /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A7EF9428F1D9A2003D060C /* Product.swift */; };
+		F0A7EF9728F1E1B0003D060C /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A7EF9628F1E1B0003D060C /* MenuManager.swift */; };
+		F0A7EF9928F1E1C6003D060C /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A7EF9828F1E1C6003D060C /* CartManager.swift */; };
+		F0A7EF9B28F1E72F003D060C /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A7EF9A28F1E72F003D060C /* OrderItem.swift */; };
 		F0ABE46928EC5389000917D3 /* CoffeMastersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ABE46828EC5389000917D3 /* CoffeMastersApp.swift */; };
 		F0ABE46B28EC5389000917D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ABE46A28EC5389000917D3 /* ContentView.swift */; };
 		F0ABE46D28EC538D000917D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0ABE46C28EC538D000917D3 /* Assets.xcassets */; };
@@ -18,6 +28,16 @@
 /* Begin PBXFileReference section */
 		F01868C328F054920009E650 /* OffersPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersPage.swift; sourceTree = "<group>"; };
 		F094077F28EEB0C600478473 /* Offer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
+		F0A7EF8728F1714F003D060C /* MenuPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPage.swift; sourceTree = "<group>"; };
+		F0A7EF8928F17207003D060C /* OrdersPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersPage.swift; sourceTree = "<group>"; };
+		F0A7EF8B28F17217003D060C /* InfoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPage.swift; sourceTree = "<group>"; };
+		F0A7EF8D28F173AD003D060C /* ProductItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItem.swift; sourceTree = "<group>"; };
+		F0A7EF8F28F17A80003D060C /* DetailsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPage.swift; sourceTree = "<group>"; };
+		F0A7EF9228F1D990003D060C /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		F0A7EF9428F1D9A2003D060C /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		F0A7EF9628F1E1B0003D060C /* MenuManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
+		F0A7EF9828F1E1C6003D060C /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
+		F0A7EF9A28F1E72F003D060C /* OrderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
 		F0ABE46528EC5389000917D3 /* CoffeMasters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeMasters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0ABE46828EC5389000917D3 /* CoffeMastersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeMastersApp.swift; sourceTree = "<group>"; };
 		F0ABE46A28EC5389000917D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +56,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F0A7EF8528F17099003D060C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F094077F28EEB0C600478473 /* Offer.swift */,
+				F0A7EF8D28F173AD003D060C /* ProductItem.swift */,
+				F0A7EF9A28F1E72F003D060C /* OrderItem.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F0A7EF8628F170AA003D060C /* Page Views */ = {
+			isa = PBXGroup;
+			children = (
+				F01868C328F054920009E650 /* OffersPage.swift */,
+				F0A7EF8728F1714F003D060C /* MenuPage.swift */,
+				F0A7EF8F28F17A80003D060C /* DetailsPage.swift */,
+				F0A7EF8928F17207003D060C /* OrdersPage.swift */,
+				F0A7EF8B28F17217003D060C /* InfoPage.swift */,
+			);
+			path = "Page Views";
+			sourceTree = "<group>";
+		};
+		F0A7EF9128F1D96E003D060C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F0A7EF9228F1D990003D060C /* Category.swift */,
+				F0A7EF9828F1E1C6003D060C /* CartManager.swift */,
+				F0A7EF9428F1D9A2003D060C /* Product.swift */,
+				F0A7EF9628F1E1B0003D060C /* MenuManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F0ABE45C28EC5389000917D3 = {
 			isa = PBXGroup;
 			children = (
@@ -55,10 +108,11 @@
 		F0ABE46728EC5389000917D3 /* CoffeMasters */ = {
 			isa = PBXGroup;
 			children = (
+				F0A7EF9128F1D96E003D060C /* Model */,
+				F0A7EF8628F170AA003D060C /* Page Views */,
+				F0A7EF8528F17099003D060C /* Views */,
 				F0ABE46828EC5389000917D3 /* CoffeMastersApp.swift */,
 				F0ABE46A28EC5389000917D3 /* ContentView.swift */,
-				F094077F28EEB0C600478473 /* Offer.swift */,
-				F01868C328F054920009E650 /* OffersPage.swift */,
 				F0ABE46C28EC538D000917D3 /* Assets.xcassets */,
 				F0ABE46E28EC538D000917D3 /* Preview Content */,
 			);
@@ -143,8 +197,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0A7EF9728F1E1B0003D060C /* MenuManager.swift in Sources */,
+				F0A7EF9928F1E1C6003D060C /* CartManager.swift in Sources */,
 				F094078028EEB0C600478473 /* Offer.swift in Sources */,
+				F0A7EF9328F1D990003D060C /* Category.swift in Sources */,
+				F0A7EF8A28F17207003D060C /* OrdersPage.swift in Sources */,
 				F01868C428F054920009E650 /* OffersPage.swift in Sources */,
+				F0A7EF9028F17A80003D060C /* DetailsPage.swift in Sources */,
+				F0A7EF9528F1D9A2003D060C /* Product.swift in Sources */,
+				F0A7EF8C28F17217003D060C /* InfoPage.swift in Sources */,
+				F0A7EF9B28F1E72F003D060C /* OrderItem.swift in Sources */,
+				F0A7EF8E28F173AD003D060C /* ProductItem.swift in Sources */,
+				F0A7EF8828F1714F003D060C /* MenuPage.swift in Sources */,
 				F0ABE46B28EC5389000917D3 /* ContentView.swift in Sources */,
 				F0ABE46928EC5389000917D3 /* CoffeMastersApp.swift in Sources */,
 			);
