@@ -15,7 +15,7 @@ struct ContentView: View {
             MenuPage()
                 .tabItem {
                     Image(systemName: "cup.and.saucer")
-                    Text("Menusss")
+                    Text("Menu")
                 }
             OffersPage()
                 .tabItem {
@@ -41,5 +41,6 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
             .environmentObject(CartManager())
+            .environmentObject(MenuManager())
     }
 }
