@@ -8,23 +8,34 @@
 import SwiftUI
 
 struct MenuPage: View {
+    
+    @EnvironmentObject var menuManager: MenuManager
+    
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(0 ..< 7) { item in
-                    NavigationLink {
-                        DetailsPage()
-                    } label: {
-                        ProductItem(product: Product(id: 1, name: "Dummy Product", description: "Dummy product description", price: 4.24, image: ""))
-                    }
-                    /**
-                     This is equivalent
-                     NavigationLink(destination: DetailsPage()) {
-                        ProductItem()
-                     }
-                     */
-                }
-            }.navigationTitle("Products")
+        if menuManager.menu.count == 0 {
+            Text("No menu items just yet")
+        } else {
+            NavigationView {
+                List {
+                    ForEach(menuManager.menu) { category in
+                        Text(category.name)
+                        
+                        ForEach(category.products) { product in
+                            NavigationLink {
+                                DetailsPage(product: product)
+                            } label: {
+                                ProductItem(product: product)
+                            }
+                            /**
+                             This is equivalent
+                             NavigationLink(destination: DetailsPage()) {
+                             ProductItem()
+                             }
+                             */
+                        }
+                    }.listRowSeparator(.hidden, edges: .bottom)
+                }.navigationTitle("Products")
+            }
         }
     }
 }
@@ -32,5 +43,6 @@ struct MenuPage: View {
 struct MenuPage_Previews: PreviewProvider {
     static var previews: some View {
         MenuPage()
+            .environmentObject(MenuManager())
     }
 }

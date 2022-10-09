@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var cartManager: CartManager
+    
     var body: some View {
         TabView {
             MenuPage()
                 .tabItem {
                     Image(systemName: "cup.and.saucer")
-                    Text("Menu")
+                    Text("Menusss")
                 }
             OffersPage()
                 .tabItem {
@@ -25,6 +27,7 @@ struct ContentView: View {
                     Image(systemName: "cart")
                     Text("Order")
                 }
+                .badge(cartManager.cart.count)
             InfoPage()
                 .tabItem {
                     Image(systemName: "info.circle")
@@ -37,5 +40,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(CartManager())
     }
 }
